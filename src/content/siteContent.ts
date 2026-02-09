@@ -40,17 +40,40 @@ availability: [
     featuredTitle: "Featured projects",
     featuredSubtitle: "Two real client projects delivered end-to-end.",
     featured: [
-      { name: "EmilyZimina.com", url: "https://emilyzimina.com/" },
-      { name: "LiliModelNYC.com", url: "https://lilimodelnyc.com/" },
-    ],
+  {
+    name: "EmilyZimina.com",
+    url: "https://emilyzimina.com/",
+    img: "/projects/emily-form.png",
+    meta: "Client website + mini admin panel",
+  },
+  {
+    name: "LiliModelNYC.com",
+    url: "https://lilimodelnyc.com/",
+    img: "/projects/lili-form.png",
+    meta: "Website + custom admin system (CRM-like)",
+  },
+],
 
     certTitle: "Education & Certifications",
     certSubtitle: "Coursera — Certificates of completion:",
     certs: [
-      { title: "HTML5 Certificate", url: "https://coursera.org/share/a387ca50dcdbdf85ddff99743a4004b9" },
-      { title: "CSS3 Certificate", url: "https://coursera.org/share/2fe931e2e1cf8c0120e4bb2fab28b6bb" },
-      { title: "JavaScript Certificate", url: "https://coursera.org/share/4ec3dd34a6d83598d6494eddd7c02a48" },
-    ],
+  {
+    title: "HTML5 Certificate",
+    url: "https://coursera.org/share/a387ca50dcdbdf85ddff99743a4004b9",
+    img: "/certs/html5.png",
+  },
+  {
+    title: "CSS3 Certificate",
+    url: "https://coursera.org/share/2fe931e2e1cf8c0120e4bb2fab28b6bb",
+    img: "/certs/css3.png",
+  },
+  {
+    title: "JavaScript Certificate",
+    url: "https://coursera.org/share/4ec3dd34a6d83598d6494eddd7c02a48",
+    img: "/certs/javascript.png",
+  },
+],
+
 
     contactTitle: "Contact",
     contactSubtitle: "Email me and I’ll reply soon.",
@@ -96,17 +119,41 @@ availability: [
     featuredTitle: "Избранные проекты",
     featuredSubtitle: "Два реальных клиентских проекта “под ключ”.",
     featured: [
-      { name: "EmilyZimina.com", url: "https://emilyzimina.com/" },
-      { name: "LiliModelNYC.com", url: "https://lilimodelnyc.com/" },
-    ],
+  {
+    name: "EmilyZimina.com",
+    url: "https://emilyzimina.com/",
+    img: "/projects/emily-form.png",
+    meta: "Клиентский сайт + мини-админка",
+  },
+  {
+    name: "LiliModelNYC.com",
+    url: "https://lilimodelnyc.com/",
+    img: "/projects/lili-form.png",
+    meta: "Сайт + админ-система (CRM-подобная)",
+  },
+],
+
 
     certTitle: "Образование и сертификаты",
     certSubtitle: "Coursera — сертификаты об успешном прохождении:",
     certs: [
-      { title: "HTML5", url: "https://coursera.org/share/a387ca50dcdbdf85ddff99743a4004b9" },
-      { title: "CSS3", url: "https://coursera.org/share/2fe931e2e1cf8c0120e4bb2fab28b6bb" },
-      { title: "JavaScript", url: "https://coursera.org/share/4ec3dd34a6d83598d6494eddd7c02a48" },
-    ],
+  {
+    title: "HTML5",
+    url: "https://coursera.org/share/a387ca50dcdbdf85ddff99743a4004b9",
+    img: "/certs/html5.png",
+  },
+  {
+    title: "CSS3",
+    url: "https://coursera.org/share/2fe931e2e1cf8c0120e4bb2fab28b6bb",
+    img: "/certs/css3.png",
+  },
+  {
+    title: "JavaScript",
+    url: "https://coursera.org/share/4ec3dd34a6d83598d6494eddd7c02a48",
+    img: "/certs/javascript.png",
+  },
+],
+
 
     contactTitle: "Контакты",
     contactSubtitle: "Напишите мне на email — я отвечу.",

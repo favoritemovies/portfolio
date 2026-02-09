@@ -3,6 +3,13 @@ import Section from "@/components/Section";
 import { t } from "@/content/siteContent";
 import Link from "next/link";
 
+type FeaturedItem = {
+  name: string;
+  url: string;
+  img?: string;
+  meta?: string;
+};
+
 export default function RuHome() {
   const lang = "ru" as const;
   const tr = t(lang);
@@ -57,7 +64,7 @@ export default function RuHome() {
 
       <Section title={tr.featuredTitle} subtitle={tr.featuredSubtitle}>
         <div className="grid grid-2">
-          {tr.featured.map((p) => (
+          {(tr.featured as unknown as FeaturedItem[]).map((p) => (
             <div key={p.name} className="card">
               <div className="h3">{p.name}</div>
               <div style={{ marginTop: 10, display: "flex", gap: 10, flexWrap: "wrap" }}>

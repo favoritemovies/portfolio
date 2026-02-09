@@ -74,3 +74,186 @@ a:hover { opacity: 0.95; }
 .p { margin: 0; color: var(--muted); }
 .badge { pointer-events: auto; }
 header, nav { pointer-events: auto; }
+
+/* ===== Buttons: more visible + hover lift ===== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease, background 160ms ease, opacity 160ms ease;
+  will-change: transform;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.22);
+  border-color: rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.06);
+}
+
+.btn:active {
+  transform: translateY(0px);
+  box-shadow: none;
+}
+
+.btn-primary {
+  border-color: rgba(253, 177, 11, 0.35);
+  background: rgba(253, 177, 11, 0.14);
+}
+
+.btn-primary:hover {
+  border-color: rgba(253, 177, 11, 0.55);
+  background: rgba(253, 177, 11, 0.20);
+}
+
+/* nav links that look like buttons (если у тебя nav использует .btn) */
+.nav a.btn {
+  padding: 9px 12px;
+}
+
+/* reduced motion respect */
+@media (prefers-reduced-motion: reduce) {
+  .btn { transition: none; }
+  .btn:hover { transform: none; }
+}
+
+/* ===== Mini project cards (home page) ===== */
+
+.proj-mini {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.proj-mini__img {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.02);
+}
+
+.proj-mini__img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.proj-mini__title {
+  font-weight: 800;
+  font-size: 18px;
+  margin: 0 0 4px;
+}
+
+.proj-mini__meta {
+  opacity: 0.86;
+  margin: 0 0 10px;
+}
+
+.proj-mini__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 720px) {
+  .proj-mini {
+    grid-template-columns: 1fr;
+  }
+  .proj-mini__img {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* ===== Certificates previews ===== */
+.cert-card { display: block; }
+.cert-thumb {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.02);
+  aspect-ratio: 16 / 10;
+}
+.cert-thumb img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* ===== Header nav: make badges look like buttons + hover lift ===== */
+
+.nav .badge,
+.nav a.badge,
+.nav button.badge,
+.nav a,
+.nav button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+  font-size: 13px;
+  text-decoration: none;
+
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease, border-color 160ms ease;
+  will-change: transform;
+}
+
+.nav .badge:hover,
+.nav a.badge:hover,
+.nav button.badge:hover,
+.nav a:hover,
+.nav button:hover {
+  transform: translateY(-2px);
+  background: rgba(125,211,252,0.10);          /* мягкая подсветка в твоём стиле */
+  border-color: rgba(125,211,252,0.35);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.22);
+  opacity: 1;                                  /* чтобы не тускнело */
+}
+
+.nav .badge:active,
+.nav a.badge:active,
+.nav button.badge:active,
+.nav a:active,
+.nav button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Optional: чуть ярче именно "Projects" */
+.nav a.badge:first-child {
+  border-color: rgba(125,211,252,0.22);
+  background: rgba(32, 210, 255, 0.527);
+}
+.nav a.badge:first-child:hover {
+  background: rgba(125,211,252,0.12);
+  border-color: rgba(32, 210, 255, 0.527);
+}
+
+/* reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .nav .badge,
+  .nav a,
+  .nav button {
+    transition: none;
+  }
+  .nav .badge:hover,
+  .nav a:hover,
+  .nav button:hover {
+    transform: none;
+  }
+}
