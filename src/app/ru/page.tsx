@@ -52,7 +52,7 @@ export default function RuHome() {
 
 
       <Section title={tr.highlightsTitle} subtitle={tr.highlightsSubtitle}>
-        <div className="grid grid-2">
+        <div className="grid">
           {tr.highlights.map((h) => (
             <div key={h.title} className="card">
               <div className="h3">{h.title}</div>
