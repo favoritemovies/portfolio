@@ -54,7 +54,10 @@ availability: [
   },
 
   { name: "Demo: Cleaning Landing (Skyline Clean)",
-    url: "https://demo-cleaning-landing.vercel.app" },
+    url: "https://demo-cleaning-landing.vercel.app",
+    img: "/projects/hero.png",
+    meta: "Landing • EN/RU • pricing • FAQ • sticky nav",
+  },
 
 ],
 
@@ -137,7 +140,10 @@ availability: [
   },
 
   { name: "Демо: Лендинг клининга (Skyline Clean)",
-    url: "https://demo-cleaning-landing.vercel.app" },
+    url: "https://demo-cleaning-landing.vercel.app",
+    img: "/projects/hero.png",
+    meta: "Лендинг • EN/RU • прайсинг • FAQ • sticky nav",
+  },
 
 ],
 

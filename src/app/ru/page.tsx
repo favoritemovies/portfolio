@@ -63,18 +63,32 @@ export default function RuHome() {
       </Section>
 
       <Section title={tr.featuredTitle} subtitle={tr.featuredSubtitle}>
-        <div className="grid grid-2">
-          {(tr.featured as unknown as FeaturedItem[]).map((p) => (
-            <div key={p.name} className="card">
-              <div className="h3">{p.name}</div>
-              <div style={{ marginTop: 10, display: "flex", gap: 10, flexWrap: "wrap" }}>
-                <a className="btn" href={p.url} target="_blank" rel="noreferrer">Сайт</a>
-                <Link className="btn btn-primary" href="/ru/projects">Кейсы</Link>
-              </div>
+  <div className="grid grid-2">
+    {(tr.featured as unknown as FeaturedItem[]).map((p) => (
+      <div key={p.name} className="card">
+        <div className="proj-mini">
+          <div className="proj-mini__img" style={{ aspectRatio: "4 / 3" }}>
+            <img
+              src={p.img ?? "/projects/emily-form.png"}
+              alt={`${p.name} preview`}
+            />
+          </div>
+
+          <div>
+            <div className="h3" style={{ marginBottom: 4 }}>{p.name}</div>
+            {p.meta ? <p className="p" style={{ marginBottom: 10 }}>{p.meta}</p> : null}
+
+            <div className="proj-mini__actions">
+              <a className="btn" href={p.url} target="_blank" rel="noreferrer">Сайт</a>
+              <Link className="btn btn-primary" href="/ru/projects">Кейсы</Link>
             </div>
-          ))}
+          </div>
         </div>
-      </Section>
+      </div>
+    ))}
+  </div>
+</Section>
+
 
       <Section title={tr.certTitle} subtitle={tr.certSubtitle}>
         <div className="grid">

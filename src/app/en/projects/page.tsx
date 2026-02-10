@@ -79,6 +79,11 @@ export default function EnProjects() {
 
 <Section title="Demo: Skyline Clean Co." subtitle="One-page landing (EN/RU) • conversion-focused layout">
   <div className="card">
+    <div className="proj-mini__img" style={{ aspectRatio: "16 / 9", marginBottom: 12 }}>
+    <img
+    src="/projects/cleaning/hero.png"
+    alt="Skyline Clean landing preview" />
+  </div>
     <p className="p">
       Bright landing page for a NYC cleaning service with sticky navigation, section anchors,
       bilingual toggle, pricing, FAQ, and contact forms (demo behavior).
