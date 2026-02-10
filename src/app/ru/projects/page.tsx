@@ -80,7 +80,7 @@ export default function RuProjects() {
       <Section title="Демо: Skyline Clean Co." subtitle="Одностраничный лендинг (EN/RU) • конверсионная структура">
   <div className="card">
     <div className="proj-mini__img" style={{ aspectRatio: "16 / 9", marginBottom: 12 }}>
-    <img src="/projects/cleaning/hero.png" alt="Превью лендинга Skyline Clean" />
+    <img src="/projects/hero.png" alt="Превью лендинга Skyline Clean" />
   </div>
     <p className="p">
       Яркий лендинг для клининг-сервиса в NYC: липкая шапка, якорные переходы по секциям,

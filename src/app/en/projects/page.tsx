@@ -81,7 +81,7 @@ export default function EnProjects() {
   <div className="card">
     <div className="proj-mini__img" style={{ aspectRatio: "16 / 9", marginBottom: 12 }}>
     <img
-    src="/projects/cleaning/hero.png"
+    src="/projects/hero.png"
     alt="Skyline Clean landing preview" />
   </div>
     <p className="p">
