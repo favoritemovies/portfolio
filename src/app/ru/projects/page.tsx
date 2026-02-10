@@ -76,6 +76,31 @@ export default function RuProjects() {
   </div>
 </div>
       </Section>
+
+      <Section title="Демо: Skyline Clean Co." subtitle="Одностраничный лендинг (EN/RU) • конверсионная структура">
+  <div className="card">
+    <p className="p">
+      Яркий лендинг для клининг-сервиса в NYC: липкая шапка, якорные переходы по секциям,
+      переключение EN/RU, прайсинг, FAQ и контакты (демо-форма).
+    </p>
+
+    <p className="p" style={{ marginTop: 10 }}>
+      <strong>Стек:</strong> HTML, CSS, JavaScript, i18n на клиенте, адаптивная верстка, деплой на Vercel.
+    </p>
+
+    <p className="p" style={{ marginTop: 10 }}>
+      <strong>Задача и решение:</strong> заголовки секций прятались под липкой шапкой —
+      исправлено через scroll-margin + подсветку активной секции.
+    </p>
+
+    <div style={{ marginTop: 12 }}>
+      <a className="btn btn-primary" href="https://demo-cleaning-landing.vercel.app" target="_blank" rel="noreferrer">
+        Открыть сайт
+      </a>
+    </div>
+  </div>
+</Section>
+
     </Container>
   );
 }

@@ -77,6 +77,31 @@ export default function EnProjects() {
   </div>
 </Section>
 
+<Section title="Demo: Skyline Clean Co." subtitle="One-page landing (EN/RU) • conversion-focused layout">
+  <div className="card">
+    <p className="p">
+      Bright landing page for a NYC cleaning service with sticky navigation, section anchors,
+      bilingual toggle, pricing, FAQ, and contact forms (demo behavior).
+    </p>
+
+    <p className="p" style={{ marginTop: 10 }}>
+      <strong>Tech stack:</strong> HTML, CSS, JavaScript, client-side i18n, responsive layout, Vercel deploy.
+    </p>
+
+    <p className="p" style={{ marginTop: 10 }}>
+      <strong>Challenge & solution:</strong> Sticky header was hiding section titles —
+      fixed with anchor offset (scroll-margin) + active section highlight.
+    </p>
+
+    <div style={{ marginTop: 12 }}>
+      <a className="btn btn-primary" href="https://demo-cleaning-landing.vercel.app" target="_blank" rel="noreferrer">
+        Live
+      </a>
+    </div>
+  </div>
+</Section>
+
+
     </Container>
   );
 }

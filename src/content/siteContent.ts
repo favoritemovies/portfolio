@@ -52,6 +52,10 @@ availability: [
     img: "/projects/lili-form.png",
     meta: "Website + custom admin system (CRM-like)",
   },
+
+  { name: "Demo: Cleaning Landing (Skyline Clean)",
+    url: "https://demo-cleaning-landing.vercel.app" },
+
 ],
 
     certTitle: "Education & Certifications",
@@ -131,6 +135,10 @@ availability: [
     img: "/projects/lili-form.png",
     meta: "Сайт + админ-система (CRM-подобная)",
   },
+
+  { name: "Демо: Лендинг клининга (Skyline Clean)",
+    url: "https://demo-cleaning-landing.vercel.app" },
+
 ],
 
 
