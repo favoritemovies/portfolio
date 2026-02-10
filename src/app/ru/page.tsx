@@ -52,7 +52,7 @@ export default function RuHome() {
 
 
       <Section title={tr.highlightsTitle} subtitle={tr.highlightsSubtitle}>
-        <div className="grid">
+        <div className="grid grid-2">
           {tr.highlights.map((h) => (
             <div key={h.title} className="card">
               <div className="h3">{h.title}</div>
@@ -63,7 +63,7 @@ export default function RuHome() {
       </Section>
 
       <Section title={tr.featuredTitle} subtitle={tr.featuredSubtitle}>
-  <div className="grid grid-2">
+  <div className="grid">
     {(tr.featured as unknown as FeaturedItem[]).map((p) => (
       <div key={p.name} className="card">
         <div className="proj-mini">
