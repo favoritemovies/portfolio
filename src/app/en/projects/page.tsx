@@ -107,6 +107,56 @@ export default function EnProjects() {
 </Section>
 
 
+<Section
+  title="Demo: Mila Nails"
+  subtitle="One-page landing (EN/RU) • beauty service demo"
+>
+  <div className="card">
+    <div
+      className="proj-mini__img"
+      style={{ aspectRatio: "16 / 9", marginBottom: 12 }}
+    >
+      <img
+        src="/projects/mila-hero.png"
+        alt="Mila Nails landing preview"
+      />
+    </div>
+
+    <p className="p">
+      Elegant one-page landing for a nail technician with a soft, modern visual style.
+      Includes bilingual EN/RU switch, service descriptions, pricing, client reviews,
+      FAQ, and a portfolio gallery.
+    </p>
+
+    <p className="p" style={{ marginTop: 10 }}>
+      Portfolio section supports category filtering and image lightbox.
+      New works can be added simply by uploading images to a folder — no admin panel required.
+    </p>
+
+    <p className="p" style={{ marginTop: 10 }}>
+      <strong>Tech stack:</strong> HTML, CSS, JavaScript, client-side i18n,
+      responsive layout, gallery filters, lightbox, Vercel deploy.
+    </p>
+
+    <p className="p" style={{ marginTop: 10 }}>
+      <strong>Challenge & solution:</strong> Needed a portfolio without CMS —
+      implemented automatic gallery rendering from static images with JS filtering.
+    </p>
+
+    <div style={{ marginTop: 12 }}>
+      <a
+        className="btn btn-primary"
+        href="https://mila-nails-demo.vercel.app/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Live
+      </a>
+    </div>
+  </div>
+</Section>
+
+
     </Container>
   );
 }

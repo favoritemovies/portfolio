@@ -104,6 +104,57 @@ export default function RuProjects() {
   </div>
 </Section>
 
+<Section
+  title="Демо: Mila Nails"
+  subtitle="Одностраничный сайт (EN/RU) • бьюти-сервис"
+>
+  <div className="card">
+    <div
+      className="proj-mini__img"
+      style={{ aspectRatio: "16 / 9", marginBottom: 12 }}
+    >
+      <img
+        src="/projects/mila-hero.png"
+        alt="Mila Nails демо-сайт"
+      />
+    </div>
+
+    <p className="p">
+      Элегантный одностраничный сайт для мастера ногтевого сервиса
+      с мягким современным дизайном. Реализовано переключение EN/RU,
+      описание услуг, прайс, отзывы клиентов, FAQ и портфолио работ.
+    </p>
+
+    <p className="p" style={{ marginTop: 10 }}>
+      Портфолио поддерживает фильтрацию по категориям и просмотр изображений
+      в модальном окне. Новые работы добавляются простой загрузкой файлов —
+      без админки и базы данных.
+    </p>
+
+    <p className="p" style={{ marginTop: 10 }}>
+      <strong>Стек:</strong> HTML, CSS, JavaScript, клиентский i18n,
+      адаптивная верстка, фильтрация галереи, lightbox, деплой на Vercel.
+    </p>
+
+    <p className="p" style={{ marginTop: 10 }}>
+      <strong>Задача и решение:</strong> Нужно портфолио без CMS —
+      реализован автоматический вывод работ из папки с JS-фильтрацией.
+    </p>
+
+    <div style={{ marginTop: 12 }}>
+      <a
+        className="btn btn-primary"
+        href="https://mila-nails-demo.vercel.app/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Сайт
+      </a>
+    </div>
+  </div>
+</Section>
+
+
     </Container>
   );
 }

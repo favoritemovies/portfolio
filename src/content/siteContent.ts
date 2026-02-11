@@ -57,9 +57,15 @@ availability: [
     meta: "Website + custom admin system (CRM-like)",
   },
 
-  { name: "Demo: Cleaning Landing (Skyline Clean)",
+  { name: "Demo: Nail Tech Landing (Mila Nails)",
     url: "https://demo-cleaning-landing.vercel.app",
     img: "/projects/hero.png",
+    meta: "Landing • EN/RU • portfolio gallery • pricing • Reviews • lightbox • filters",
+  },
+
+  { name: "Demo: Mila Nails Demo", 
+    url: "https://mila-nails-demo.vercel.app/",
+    img: "/projects/mila-hero.png",
     meta: "Landing • EN/RU • pricing • FAQ • sticky nav",
   },
 
@@ -168,6 +174,12 @@ availability: [
     url: "https://demo-cleaning-landing.vercel.app",
     img: "/projects/hero.png",
     meta: "Лендинг • EN/RU • прайсинг • FAQ • sticky nav",
+  },
+
+  { name: "Демо: Nail-мастер (Mila Nails)", 
+    url: "https://mila-nails-demo.vercel.app/",
+    img: "/projects/mila-hero.png",
+    meta: "Лендинг • EN/RU • портфолио • цены • Отзывы • лайтбокс • фильтры",
   },
 
 ],
