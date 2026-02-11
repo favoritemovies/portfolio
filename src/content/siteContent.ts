@@ -5,6 +5,7 @@ const content = {
     headerName: "Natalia Azarevich",
     headerTagline: "Front-end / Full-stack Web Developer",
     navProjects: "Projects",
+    navPricing: "Pricing",
     navContact: "Contact",
 
     heroTitle: "Front-end / Full-stack Web Developer",
@@ -81,6 +82,23 @@ availability: [
   },
 ],
 
+pricingTitle: "Pricing",
+pricingSubtitle: "Transparent estimates. Final quote depends on scope.",
+pricingItems: [
+  { title: "Website UI / Frontend", price: "$1,200+", note: "Up to 5 pages included • +$150 per extra page" },
+  { title: "Multi-step forms & logic", price: "$800+", note: "Conditional flows, validation, user journey" },
+  { title: "Backend + database (PHP/MySQL)", price: "$1,000+", note: "Server logic, storage, processing" },
+  { title: "Admin panel (CRM-like)", price: "$1,200+", note: "Dashboard, filtering, management" },
+  { title: "Excel import + SMTP bulk email", price: "$700+", note: "Import, mapping, campaigns" },
+  { title: "SEO + analytics (GA4/GTM)", price: "$300+", note: "Setup + basic event tracking" },
+],
+pricingTotalsTitle: "Typical totals",
+pricingTotals: [
+  { title: "Landing page", price: "$400–600" },
+  { title: "Business website", price: "$1,200–2,500" },
+  { title: "Custom web system", price: "$4,000–8,000+" },
+],
+pricingNote: "I’ll confirm an exact quote after a short scope chat.",
 
     contactTitle: "Contact",
     contactSubtitle: "Email me and I’ll reply soon.",
@@ -91,6 +109,7 @@ availability: [
     headerName: "Наталья Азаревич",
     headerTagline: "Front-end / Full-stack веб-разработчик",
     navProjects: "Проекты",
+    navPricing: "Цены",
     navContact: "Контакты",
 
     heroTitle: "Front-end / Full-stack веб-разработчик",
@@ -167,6 +186,25 @@ availability: [
     img: "/certs/javascript.png",
   },
 ],
+
+pricingTitle: "Цены",
+pricingSubtitle: "Понятные оценки. Итог зависит от объёма работ.",
+pricingItems: [
+  { title: "Frontend / сайт", price: "от $1,200", note: "До 5 страниц включено • +$150 за доп. страницу" },
+  { title: "Многошаговые формы и логика", price: "от $800", note: "Условия, ветвления, валидация" },
+  { title: "Backend + база (PHP/MySQL)", price: "от $1,000", note: "Серверная логика, хранение, обработка" },
+  { title: "Админ-панель (CRM-подобная)", price: "от $1,200", note: "Панель, фильтры, управление" },
+  { title: "Импорт Excel + SMTP-рассылки", price: "от $700", note: "Импорт, сопоставление, кампании" },
+  { title: "SEO + аналитика (GA4/GTM)", price: "от $300", note: "Настройка + базовые события" },
+],
+pricingTotalsTitle: "Примеры бюджетов",
+pricingTotals: [
+  { title: "Лендинг", price: "$400–600" },
+  { title: "Бизнес-сайт", price: "$1,200–2,500" },
+  { title: "Кастомная веб-система", price: "$4,000–8,000+" },
+],
+pricingNote: "Точную стоимость скажу после короткого обсуждения задач.",
+
 
 
     contactTitle: "Контакты",

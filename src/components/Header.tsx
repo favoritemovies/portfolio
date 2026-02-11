@@ -28,6 +28,7 @@ export default function Header({ lang }: { lang: Lang }) {
           <nav className="nav" style={{ display: "flex", alignItems: "center", gap: 12 }}>
 
             <Link className="badge" href={`/${lang}/projects`}>{tr.navProjects}</Link>
+            <Link className="badge" href={`/${lang}/pricing`}>{(tr as any).navPricing}</Link>
             <a className="badge" href={`/${lang}#contact`}>{tr.navContact}</a>
             <LangSwitch lang={lang} />
           </nav>

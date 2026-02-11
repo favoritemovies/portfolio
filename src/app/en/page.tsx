@@ -49,23 +49,36 @@ export default function EnHome() {
       {/* ABOUT */}
       <Section title={tr.aboutTitle} subtitle={tr.aboutSubtitle}>
         <div className="card">
-          <p className="p" style={{ marginBottom: 12 }}>{tr.aboutText}</p>
+  <div style={{ display: "grid", gridTemplateColumns: "140px 1fr", gap: 16, alignItems: "start" }}>
+    <div style={{ borderRadius: 16, overflow: "hidden", border: "1px solid var(--border)" }}>
+      <img
+        src="/me.jpg"
+        alt="Natalia Azarevich"
+        style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", aspectRatio: "1 / 1" }}
+      />
+    </div>
 
-          <ul className="p" style={{ margin: 0, paddingLeft: 18 }}>
-            {tr.aboutBullets.map((b: string) => (
-              <li key={b} style={{ marginBottom: 8 }}>{b}</li>
-            ))}
-          </ul>
+    <div>
+      <p className="p" style={{ marginBottom: 12 }}>{tr.aboutText}</p>
 
-          <div style={{ marginTop: 14 }}>
-            <div className="h3" style={{ marginBottom: 8 }}>{tr.availabilityTitle}</div>
-            <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-              {tr.availability.map((a: string) => (
-                <span key={a} className="badge">{a}</span>
-              ))}
-            </div>
-          </div>
+      <ul className="p" style={{ margin: 0, paddingLeft: 18 }}>
+        {tr.aboutBullets.map((b: string) => (
+          <li key={b} style={{ marginBottom: 8 }}>{b}</li>
+        ))}
+      </ul>
+
+      <div style={{ marginTop: 14 }}>
+        <div className="h3" style={{ marginBottom: 8 }}>{tr.availabilityTitle}</div>
+        <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+          {tr.availability.map((a: string) => (
+            <span key={a} className="badge">{a}</span>
+          ))}
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
       </Section>
 
       {/* NO HR between About and Highlights (as we planned) */}
@@ -111,6 +124,7 @@ export default function EnHome() {
 
       <hr className="hr" />
 
+
       {/* CERTS (with previews if img exists) */}
       <Section title={tr.certTitle} subtitle={tr.certSubtitle}>
         <div className="grid grid-2">
@@ -130,6 +144,20 @@ export default function EnHome() {
           ))}
         </div>
       </Section>
+
+      <hr className="hr" />
+
+<Section title={tr.pricingTitle} subtitle={tr.pricingSubtitle}>
+  <div className="grid grid-2">
+    {tr.pricingItems.map((x: any) => (
+      <div key={x.title} className="card">
+        <div className="h3">{x.title}</div>
+        <div style={{ fontSize: 28, fontWeight: 800, margin: "8px 0" }}>{x.price}</div>
+        <p className="p">{x.note}</p>
+      </div>
+    ))}
+  </div>
+</Section>
 
       <hr className="hr" />
 

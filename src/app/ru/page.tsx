@@ -31,23 +31,38 @@ export default function RuHome() {
       <hr className="hr" />
 
       <Section title={tr.aboutTitle} subtitle={tr.aboutSubtitle}>
-  <div className="card">
-    <p className="p" style={{ marginBottom: 12 }}>{tr.aboutText}</p>
-    <ul className="p" style={{ margin: 0, paddingLeft: 18 }}>
-      {tr.aboutBullets.map((b: string) => (
-        <li key={b} style={{ marginBottom: 8 }}>{b}</li>
-      ))}
-    </ul>
+ <div className="card">
+  <div style={{ display: "grid", gridTemplateColumns: "140px 1fr", gap: 16, alignItems: "start" }}>
+    <div style={{ borderRadius: 16, overflow: "hidden", border: "1px solid var(--border)" }}>
+      <img
+        src="/me.jpg"
+        alt="Natalia Azarevich"
+        style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", aspectRatio: "1 / 1" }}
+      />
+    </div>
 
-    <div style={{ marginTop: 14 }}>
-      <div className="h3" style={{ marginBottom: 8 }}>{tr.availabilityTitle}</div>
-      <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-        {tr.availability.map((a: string) => (
-          <span key={a} className="badge">{a}</span>
+    <div>
+      <p className="p" style={{ marginBottom: 12 }}>{tr.aboutText}</p>
+
+      <ul className="p" style={{ margin: 0, paddingLeft: 18 }}>
+        {tr.aboutBullets.map((b: string) => (
+          <li key={b} style={{ marginBottom: 8 }}>{b}</li>
         ))}
+      </ul>
+
+      <div style={{ marginTop: 14 }}>
+        <div className="h3" style={{ marginBottom: 8 }}>{tr.availabilityTitle}</div>
+        <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+          {tr.availability.map((a: string) => (
+            <span key={a} className="badge">{a}</span>
+          ))}
+        </div>
       </div>
     </div>
   </div>
+</div>
+
+
 </Section>
 
 
@@ -89,17 +104,37 @@ export default function RuHome() {
   </div>
 </Section>
 
-
       <Section title={tr.certTitle} subtitle={tr.certSubtitle}>
-        <div className="grid">
-          {tr.certs.map((c) => (
-            <a key={c.url} className="card" href={c.url} target="_blank" rel="noreferrer">
-              <div className="h3">{c.title}</div>
-              <p className="p">Открыть сертификат</p>
-            </a>
-          ))}
+  <div className="grid grid-2">
+    {tr.certs.map((c: any) => (
+      <a key={c.url} className="card cert-card" href={c.url} target="_blank" rel="noreferrer">
+        {c.img ? (
+          <div className="cert-thumb">
+            <img src={c.img} alt={`${c.title} сертификат`} />
+          </div>
+        ) : null}
+
+        <div style={{ marginTop: c.img ? 10 : 0 }}>
+          <div className="h3">{c.title}</div>
+          <p className="p">Открыть сертификат</p>
         </div>
-      </Section>
+      </a>
+    ))}
+  </div>
+</Section>
+
+
+      <Section title={tr.pricingTitle} subtitle={tr.pricingSubtitle}>
+  <div className="grid grid-2">
+    {tr.pricingItems.map((x: any) => (
+      <div key={x.title} className="card">
+        <div className="h3">{x.title}</div>
+        <div style={{ fontSize: 28, fontWeight: 800, margin: "8px 0" }}>{x.price}</div>
+        <p className="p">{x.note}</p>
+      </div>
+    ))}
+  </div>
+</Section>
 
       <Section title={tr.contactTitle} subtitle={tr.contactSubtitle}>
         <div id="contact" className="card">
