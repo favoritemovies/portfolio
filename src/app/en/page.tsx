@@ -47,39 +47,43 @@ export default function EnHome() {
       <hr className="hr" />
 
       {/* ABOUT */}
-      <Section title={tr.aboutTitle} subtitle={tr.aboutSubtitle}>
-        <div className="card">
-  <div style={{ display: "grid", gridTemplateColumns: "140px 1fr", gap: 16, alignItems: "start" }}>
-    <div style={{ borderRadius: 16, overflow: "hidden", border: "1px solid var(--border)" }}>
-      <img
-        src="/me.jpg"
-        alt="Natalia Azarevich"
-        style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", aspectRatio: "1 / 1" }}
-      />
-    </div>
+     <Section title={tr.aboutTitle} subtitle={tr.aboutSubtitle}>
+  <div className="card">
+    <div className="about-grid">
+      <div className="about-photo">
+        <img src="/me.jpg" alt="Natalia Azarevich" />
+      </div>
 
-    <div>
-      <p className="p" style={{ marginBottom: 12 }}>{tr.aboutText}</p>
+      {/* Короткая фраза справа от фото */}
+      <div className="about-intro">
+        <p className="p" style={{ margin: 0 }}>{tr.aboutText}</p>
+      </div>
 
-      <ul className="p" style={{ margin: 0, paddingLeft: 18 }}>
-        {tr.aboutBullets.map((b: string) => (
-          <li key={b} style={{ marginBottom: 8 }}>{b}</li>
-        ))}
-      </ul>
+      {/* Всё ниже на всю ширину */}
+      <div className="about-rest">
+        <p className="p" style={{ margin: "0 0 12px" }}>{(tr as any).aboutText2}</p>
 
-      <div style={{ marginTop: 14 }}>
-        <div className="h3" style={{ marginBottom: 8 }}>{tr.availabilityTitle}</div>
-        <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-          {tr.availability.map((a: string) => (
-            <span key={a} className="badge">{a}</span>
+        <ul className="p" style={{ margin: 0, paddingLeft: 18 }}>
+          {tr.aboutBullets.map((b: string) => (
+            <li key={b} style={{ marginBottom: 8 }}>{b}</li>
           ))}
+        </ul>
+
+        <div style={{ marginTop: 14 }}>
+          <div className="h3" style={{ marginBottom: 8 }}>{tr.availabilityTitle}</div>
+          <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+            {tr.availability.map((a: string) => (
+              <span key={a} className="badge">{a}</span>
+            ))}
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</Section>
 
-      </Section>
+
+
 
       {/* NO HR between About and Highlights (as we planned) */}
 

@@ -17,7 +17,10 @@ const content = {
     aboutTitle: "About",
 aboutSubtitle: "I build client-ready websites and systems — and I’m open to both freelance and junior roles.",
 aboutText:
-  "I’m a web developer with hands-on experience delivering real client projects end-to-end. I build responsive multi-page websites, advanced application forms, and custom admin panels with databases, email automation (SMTP), SEO and analytics (GA4/GTM).",
+  "I’m a web developer with hands-on experience delivering real client projects end-to-end.",
+
+aboutText2:"I build responsive multi-page websites, advanced application forms, and custom admin panels with databases, email automation (SMTP), SEO and analytics (GA4/GTM).",
+
 aboutBullets: [
   "Delivered 2 commercial websites in the US market (English + Russian audiences).",
   "Full cycle: requirements → UI → forms → admin panel/DB → hosting/domain → analytics.",
@@ -121,7 +124,10 @@ pricingNote: "I’ll confirm an exact quote after a short scope chat.",
      aboutTitle: "Обо мне",
 aboutSubtitle: "Делаю сайты и веб-системы под ключ — и открыта к фрилансу и junior-позициям.",
 aboutText:
-  "Я веб-разработчик с практическим опытом коммерческих проектов. Делаю адаптивные многостраничные сайты, сложные формы заявок и админ-панели с базой данных, автоматизацией писем (SMTP), SEO и аналитикой (GA4/GTM).",
+  "Я веб-разработчик с практическим опытом коммерческих проектов.",
+
+aboutText2: "Делаю адаптивные многостраничные сайты, сложные формы заявок и админ-панели с базой данных, автоматизацией писем (SMTP), SEO и аналитикой (GA4/GTM).",
+
 aboutBullets: [
   "Сделала 2 коммерческих сайта для рынка США (аудитория EN и RU).",
   "Полный цикл: требования → интерфейс → формы → админка/БД → домен/хостинг → аналитика.",

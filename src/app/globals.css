@@ -257,3 +257,65 @@ header, nav { pointer-events: auto; }
     transform: none;
   }
 }
+
+
+/* ===== About layout: desktop ===== */
+.about-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.about-photo {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+/* Desktop/tablet: photo left, all text right */
+@media (min-width: 721px) {
+  .about-grid {
+    grid-template-areas:
+      "photo intro"
+      "photo rest";
+  }
+  .about-photo { 
+    grid-area: photo; 
+  }
+  .about-intro { 
+    grid-area: intro; 
+  }
+
+  .about-rest { grid-area: rest; }
+}
+
+/* Mobile: photo left + intro right, then rest full width */
+@media (max-width: 720px) {
+  .about-grid {
+    grid-template-columns: 140px 1fr;
+    grid-template-areas:
+      "photo intro"
+      "rest  rest";
+  }
+  .about-photo { grid-area: photo; }
+  .about-intro { 
+    grid-area: intro; 
+  padding-top: 12px;            /* ⬅️ опускаем текст ниже */
+  }
+
+  .about-intro .p {
+    font-size: 16px;           /* ⬅️ делаем крупнее */
+    line-height: 1.45;           /* аккуратнее читается */
+  }
+
+  .about-rest { grid-area: rest; }
+}
